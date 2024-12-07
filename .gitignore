@@ -42,5 +42,3 @@ next-env.d.ts
 #runtime
 src/styles/_base.scss
 src/styles/_components.scss
-
-src/styles/_base.scss

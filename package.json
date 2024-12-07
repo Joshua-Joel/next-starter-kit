@@ -3,11 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "npm run style:build && next dev",
+    "dev": "npm run asset:build && next dev",
     "build": "next build",
     "start": "next start",
+    "start-local": "next start",
+    "start-dev:watch": "next start",
+    "start-fake-services": "next start",
     "lint": "next lint",
-    "style:build": "node styles.js"
+    "asset:build": "node assets.js"
   },
   "dependencies": {
     "next": "15.0.4",
