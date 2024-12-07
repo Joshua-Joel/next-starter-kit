@@ -10,7 +10,7 @@ console.log("process.env.BRAND==", process.env.BRAND);
 const sourceImagesDir = path.join(__dirname, './src/images', process.env.BRAND || 'mrc');
 const destImagesDir = path.join(__dirname, './public/images/');
 const sourceStylesDir = path.resolve(__dirname, "./src/styles", process.env.BRAND || "mrc");
-const destStylesBasePath = path.resolve(__dirname, "./src/styles");
+const destStylesDir = path.resolve(__dirname, "./src/styles");
 
 (async () => {
   // Ensure the destination directory for images exists
@@ -32,10 +32,10 @@ const destStylesBasePath = path.resolve(__dirname, "./src/styles");
     filePaths.map(async (fp) => {
       try {
         const fileName = path.basename(fp);
-        const destPath = path.resolve(destStylesBasePath, fileName);
+        const destPath = path.resolve(destStylesDir, fileName);
         await rm(destPath, { force: true }); // Remove the existing file in the destination
         await cp(fp, destPath); // Copy the new file to the destination
-        console.log(`${fileName} copied successfully to ${destStylesBasePath}`);
+        console.log(`${fileName} copied successfully to ${destStylesDir}`);
       } catch (err) {
         console.error(`Error processing file: ${fp}`, err);
       }
