@@ -9,7 +9,7 @@
     "start-local": "next start",
     "start-dev:watch": "next start",
     "start-fake-services": "next start",
-    "asset:build": "node assets.js",
+    "asset:build": "node scripts/assets.js",
     "lint": "next lint",
     "lint:fix": "next lint --fix",
     "prettier": "prettier --check \"**/*.{js,jsx,ts,tsx}\"",

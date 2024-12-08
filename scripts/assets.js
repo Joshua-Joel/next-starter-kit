@@ -5,11 +5,11 @@ const { cp, rm } = require("fs/promises");
 
 console.log("process.env.BRAND==", process.env.BRAND);
 
-const brandImagesDir = path.join(__dirname, './src/images', process.env.BRAND || 'mrc');
-const sharedImagesDir = path.join(__dirname, './src/images', process.env.BRAND || 'mrc');
-const destImagesDir = path.join(__dirname, './public/images/');
-const brandStylesDir = path.resolve(__dirname, "./src/styles", process.env.BRAND || "mrc");
-const destStylesDir = path.resolve(__dirname, "./src/styles");
+const brandImagesDir = path.join(__dirname, '../src/images', process.env.BRAND || 'mrc');
+const sharedImagesDir = path.join(__dirname, '../src/images', process.env.BRAND || 'mrc');
+const destImagesDir = path.join(__dirname, '../public/images/');
+const brandStylesDir = path.resolve(__dirname, "../src/styles", process.env.BRAND || "mrc");
+const destStylesDir = path.resolve(__dirname, "../src/styles");
 
 (async () => {
   try {

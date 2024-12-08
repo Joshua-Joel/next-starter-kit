@@ -22,6 +22,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "assets.js", ".js", "src/utils/localization.ts", "src/helpers/content.ts", "src/locales/index.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "scripts/assets.js", ".js", "src/utils/localization.ts", "src/helpers/content.ts", "src/locales/index.ts"],
   "exclude": ["node_modules"]
 }

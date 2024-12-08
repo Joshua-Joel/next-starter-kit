@@ -1,0 +1,9 @@
+.git
+node_modules
+public
+dist
+.gitignore
+scripts
+*.md
+*.log
+fake-services
