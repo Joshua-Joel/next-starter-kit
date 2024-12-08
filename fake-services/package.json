@@ -1,6 +1,7 @@
 {
   "name": "fake-services",
   "version": "1.0.0",
+  "private": true,
   "description": "Fake service for <APP_NAME>",
   "main": "index.js",
   "scripts": {
