@@ -1,1 +1,1 @@
-export { default as HomeContent } from './Home';
+export { default as LoanOverviewContent } from './LoanOverview';

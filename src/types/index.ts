@@ -1,6 +1,5 @@
-export interface AppConfig {
-  appBrandName: string;
-  brandName: string;
-  port: number;
-  environment: string;
+export interface Loan {
+  loanNumber: string;
+  customerId: string;
+  emi: number;
 }

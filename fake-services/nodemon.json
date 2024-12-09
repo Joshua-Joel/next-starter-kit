@@ -1,0 +1,6 @@
+{
+  "watch": ["routes","../stubs"],
+  "ext": "js,ts,json",
+  "ignore": ["node_modules"],
+  "exec": "node ./index.js"
+}

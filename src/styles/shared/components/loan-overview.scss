@@ -1,0 +1,15 @@
+.loan-overview-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 5rem auto;
+  gap: 2rem;
+
+  .manage-autopay {
+    width: 12rem;
+    height: 4rem;
+    border-radius: 1rem;
+    background-color: orange;
+  }
+}
