@@ -2,13 +2,7 @@
 
 import { useEffect } from 'react';
 
-export default function GlobalError({
-  error,
-  reset,
-}: {
-  error: Error;
-  reset: () => void;
-}) {
+export default function GlobalError({ error, reset }: { error: Error; reset: () => void }) {
   useEffect(() => {
     console.error(error);
   }, [error]);
@@ -17,9 +11,7 @@ export default function GlobalError({
     <html>
       <body style={{ textAlign: 'center', padding: '50px' }}>
         <h1 style={{ fontSize: '3rem', color: '#ff4757' }}>500 - Something went wrong</h1>
-        <p style={{ fontSize: '1.5rem' }}>
-          Sorry! An unexpected error has occurred.
-        </p>
+        <p style={{ fontSize: '1.5rem' }}>Sorry! An unexpected error has occurred.</p>
         <button
           onClick={reset}
           style={{

@@ -1,6 +1,6 @@
 const HomeContent = {
-  greeting: "Welcome, RPS customer!",
-  cta: "Pay now",
+  greeting: 'Welcome, RPS customer!',
+  cta: 'Pay now',
 };
 
 export default HomeContent;

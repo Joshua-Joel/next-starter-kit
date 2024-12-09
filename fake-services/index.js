@@ -9,4 +9,3 @@ app.use('/loans', routes.loans);
 app.listen(port, () => {
   console.log(`Fake services started and server listening on ${port}`);
 });
-

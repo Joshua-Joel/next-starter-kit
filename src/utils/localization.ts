@@ -8,16 +8,15 @@ type ContentType = {
 const contentData: ContentType = Content.default as ContentType;
 
 const translate = (contentPath: string, values?: Record<string, string>) => {
-
   const content = _.get(contentData, contentPath, null);
 
   if (Array.isArray(content)) {
     return content.map((item) =>
-      typeof item === "string" && values ? _.template(item)(values) : item
+      typeof item === 'string' && values ? _.template(item)(values) : item
     );
   }
 
-  if (typeof content === "string") {
+  if (typeof content === 'string') {
     return values ? _.template(content)(values) : content;
   }
   return null;

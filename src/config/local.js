@@ -1,3 +1,3 @@
 module.exports = {
-  environment: 'local'
-}
+  environment: 'local',
+};
