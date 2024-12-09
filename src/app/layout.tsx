@@ -1,10 +1,8 @@
 import type { Metadata } from "next";
-import "./globals.css";
-import "../styles/shared/_base.scss"
-import "../styles/shared/_components.scss"
-import "../styles/_base.scss"
-import "../styles/_components.scss"
-
+import "@/styles/shared/_base.scss"
+import "@/styles/shared/_components.scss"
+import "@/styles/_base.scss"
+import "@/styles/_components.scss"
 
 export const metadata: Metadata = {
   title: "Next Starter Kit",
