@@ -7,9 +7,9 @@ export default function Home() {
         <h1>Hello Joshua</h1>
       </div>
       <Image
-        src="images/home.svg"
-        width={500}
-        height={500}
+        src="/images/home.svg"
+        width={50}
+        height={50}
         alt="Home image">
       </Image>
     </div>

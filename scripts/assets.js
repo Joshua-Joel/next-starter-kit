@@ -3,7 +3,7 @@ const path = require("path");
 const { cp, rm } = require("fs/promises");
 /* eslint-enable @typescript-eslint/no-var-requires */
 
-console.log("process.env.BRAND==", process.env.BRAND);
+console.log("current brand =", process.env.BRAND);
 
 const brandImagesDir = path.join(__dirname, '../src/images', process.env.BRAND || 'mrc');
 const sharedImagesDir = path.join(__dirname, '../src/images', process.env.BRAND || 'mrc');

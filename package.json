@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "npm run asset:build && next dev",
-    "build": "next build",
+    "build": "npm run asset:build && next build",
     "start": "next start",
     "start-local": "next start",
     "start-dev:watch": "next start",
@@ -25,6 +25,7 @@
   },
   "author": "Joshua Joel J",
   "dependencies": {
+    "@module-federation/nextjs-mf": "^8.8.4",
     "lodash": "^4.17.21",
     "next": "15.0.4",
     "react": "^19.0.0",
